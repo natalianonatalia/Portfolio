@@ -138,7 +138,8 @@ section {
   .portfolio-card {
     position: relative;
     border: none;
-    height: 300px;
+    height: 300px; /* Keeps the height fixed */
+    min-height: 300px; /* Ensures the card is never smaller than 300px */
     overflow: hidden;
     cursor: pointer;
   }
