@@ -15,7 +15,7 @@ let blobSketch = (p) => {
   };
 
   p.draw = function () {
-    p.background(240, 10, 5);
+    p.background(	257,	40,	91);
 
     p.orbitControl(0.5, 0.5, 0.01);
     p.rotateX(rotX);
@@ -23,11 +23,11 @@ let blobSketch = (p) => {
     p.rotateZ(rotZ);
 
     let d = p.dist(p.mouseX, p.mouseY, p.width / 2, p.height / 2);
-    let proximity = p.map(d, 0, p.width / 2, 1.0, 0.3);
+    let proximity = p.map(d, 0, p.width / 2, 1.0, 0.6);
 
-    let detail = 45;
-    let radius = 120;
-    let noiseScale = 0.6;
+    let detail = 20;
+    let radius = 300;
+    let noiseScale = 2;
     let time = p.millis() * 0.001;
 
     for (let i = 0; i < detail; i++) {
