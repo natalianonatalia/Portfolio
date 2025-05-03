@@ -1,4 +1,4 @@
-body { scroll-behavior: smooth; }
+/* === p5 container for the p5 sketch.js === */
 
 #p5-container canvas {
     position: absolute !important;
@@ -10,12 +10,85 @@ body { scroll-behavior: smooth; }
     pointer-events: none;
   }
 
-  .h1 {
-    font-family: "Syne Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
+/* === FONT IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=DM+Sans:wght@400;500;700&display=swap');
+
+/* === COLOR PALETTE VARIABLES === */
+:root {
+  --black: #000000;
+  --pink: #E891C0;
+  --beige: #D3CDB5;
+  --lime: #DEF509;
+  --lavender: #A78CE9;
+
+  --font-heading: 'Syne Mono', monospace;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* === GLOBAL STYLES === */
+body {
+  font-family: var(--font-body) !important; /* Ensures DM Sans is applied */
+  background-color: var(--black);
+  color: var(--beige);
+  scroll-behavior: smooth;
+}
+
+/* === HEADINGS & NAV === */
+h1, h2, h3, .navbar-brand, .nav-link {
+  font-family: var(--font-heading) !important;
+  color: var(--pink) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* === NAVBAR OVERRIDES === */
+.navbar {
+  background-color: var(--black);
+  border-bottom: 1px solid var(--lavender);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--lime) !important;
+  text-shadow: 0 0 5px var(--lime);
+}
+
+/* === LINKS === */
+a {
+  color: var(--lavender);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--lime);
+  text-shadow: 0 0 5px var(--lime);
+}
+
+/* === BUTTON OVERRIDES === */
+.btn {
+  font-family: var(--font-heading);
+  background-color: var(--pink);
+  color: var(--black);
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--lavender);
+  color: var(--black);
+  box-shadow: 0 0 10px var(--pink), 0 0 20px var(--lime);
+}
+
+/* === SECTION LAYOUT === */
+section {
+  padding: 3rem 1.5rem;
+}
+
+/* === RESPONSIVE TYPOGRAPHY === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-  
-  .col-accent {
-    color: rgba(222, 245, 9);
+  h2 {
+    font-size: 1.5rem;
   }
+}
