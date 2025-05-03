@@ -99,6 +99,12 @@ section {
     font-size: 1.5rem;
   }
 }
+/* === RESPONSIVE cards === */
+@media (max-width: 768px) {
+    .portfolio-card {
+      height: 200px;
+    }
+}
 
 .about-photo {
     width: 100%;
@@ -129,3 +135,39 @@ section {
     font-size: 1.1rem;
     line-height: 1.6;
   }
+
+  .portfolio-card {
+    border: none;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--black); /* fallback */
+  }
+  
+  .portfolio-card .card-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%); /* darkens image for better text visibility */
+  }
+  
+  .portfolio-card .card-img-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    transition: background 0.3s ease;
+  }
+  
+  .portfolio-card:hover .card-img {
+    filter: brightness(100%);
+  }
+  
+  .portfolio-card .card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--pink);
+  }
+  
+  .portfolio-card .card-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--beige);
+  }
+  
