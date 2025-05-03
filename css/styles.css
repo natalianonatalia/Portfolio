@@ -26,9 +26,8 @@
 
 /* Apply Syne Mono ONLY to my name */
 .my-name {
-    font-family: var(--font-name);
-    font-size: 2.5rem;
-    color: var(--lime);
+    font-family: 'Syne Mono', monospace !important;
+    color: var(--lime) !important;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -100,3 +99,33 @@ section {
     font-size: 1.5rem;
   }
 }
+
+.about-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 5px solid var(--lime);
+    border-radius: 0 !important;
+    box-shadow: 0 0 20px var(--lime);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .about-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .section-title {
+    font-family: var(--font-heading);
+    color: var(--pink);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .about-description {
+    font-family: var(--font-body);
+    color: var(--beige);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
