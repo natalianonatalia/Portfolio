@@ -174,9 +174,15 @@ section {
     opacity: 1;
   }
   
-  .portfolio-card .card-title,
+  .portfolio-card 
   .portfolio-card .card-text {
     font-family: var(--font-body);
     color: var(--beige);
   }
   
+  .card-title {
+    font-family: 'Syne Mono', monospace !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8rem; /* You can adjust this value */
+  }
