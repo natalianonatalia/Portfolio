@@ -212,4 +212,8 @@ section {
         font-family: var(--font-body);
         color: var(--beige);
     }
+    .card-title {
+        color: var(--lime) !important;
+      }
+    
   }
