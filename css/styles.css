@@ -186,3 +186,14 @@ section {
     letter-spacing: 1px;
     font-size: 1.8rem; /* You can adjust this value */
   }
+
+  @media (max-width: 768px) {
+    .portfolio-card .card-img-overlay {
+      opacity: 1 !important;
+      background: rgba(0, 0, 0, 0.6); /* Optional: adds contrast so text is readable */
+    }
+  
+    .portfolio-card:hover .card-img {
+      filter: brightness(60%);
+    }
+  }
