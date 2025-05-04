@@ -18,6 +18,7 @@
   --beige: #D3CDB5;
   --lime: #DEF509;
   --lavender: #A78CE9;
+  --skyblue: #8FA7ED;
 
   --font-name: 'Syne Mono', monospace;
   --font-heading: 'Space Grotesk', sans-serif;
@@ -106,6 +107,10 @@ section {
     }
 }
 
+.about-background{
+    background-color: var(--beige);
+}
+
 .about-photo {
     width: 100%;
     max-width: 400px;
@@ -118,7 +123,8 @@ section {
   }
   
   .about-photo:hover {
-    transform: scale(1.05);
+    filter: hue-rotate(-0.25turn);
+
   }
   
   .section-title {
@@ -131,10 +137,14 @@ section {
   
   .about-description {
     font-family: var(--font-body);
-    color: var(--beige);
+    color: var(--black);
     font-size: 1.1rem;
     line-height: 1.6;
   }
+
+  .about-background{
+    background-color: var(--beige);
+}
   .portfolio-card {
     position: relative;
     border: none;
@@ -185,6 +195,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.8rem; /* You can adjust this value */
+    color: var(--lime)
   }
 
   @media (max-width: 768px) {
@@ -196,4 +207,8 @@ section {
     .portfolio-card:hover .card-img {
       filter: brightness(60%);
     }
+
+    .card-text {
+        font-family: var(--font-body);
+        color: var(--beige);
   }
