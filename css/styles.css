@@ -211,4 +211,5 @@ section {
     .card-text {
         font-family: var(--font-body);
         color: var(--beige);
+    }
   }
