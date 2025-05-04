@@ -36,9 +36,9 @@
 /* === GLOBAL STYLES === */
 body {
   font-family: var(--font-body) !important; /* Ensures DM Sans is applied */
-  background-color: var(--black);
   color: var(--beige);
   scroll-behavior: smooth;
+  background-color: var(--black);
 }
 
 /* === HEADINGS & NAV === */
@@ -107,9 +107,6 @@ section {
     }
 }
 
-.about-background{
-    background-color: var(--beige);
-}
 
 .about-photo {
     width: 100%;
@@ -120,11 +117,6 @@ section {
     box-shadow: 0 0 20px var(--lime);
     transition: transform 0.3s ease;
     object-fit: cover;
-  }
-  
-  .about-photo:hover {
-    filter: hue-rotate(-0.25turn);
-
   }
   
   .section-title {
@@ -144,6 +136,10 @@ section {
 
   .about-background{
     background-color: var(--beige);
+}
+
+.portfolio{
+    background-color: white;
 }
   .portfolio-card {
     position: relative;
@@ -219,6 +215,9 @@ section {
   }
 
   /* Project Page Specific Styles */
+.project{
+    background-color: #8FA7ED !important;
+}
 .project-title {
     font-family: 'Syne mono', sans-serif !important;
     color: var(--lime)!important;
@@ -264,6 +263,10 @@ section {
     margin-bottom: 0.5rem;
     font-family: 'DM Sans', sans-serif;
     color: var(--beige);
+  }
+
+  .contact {
+    background-color: #000000;
   }
 
   
